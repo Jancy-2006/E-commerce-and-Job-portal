@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kolam Home – Handmade Home Goods</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="bar">
+<div class="logo">Kolam <span>Home</span></div>
+<input type="search" id="q" placeholder="Search products" aria-label="Search products">
+<button id="theme" aria-label="Toggle theme">Theme</button>
+<button class="primary" id="cartBtn">Cart (<span id="cnt">0</span>)</button>
+</div></header>
+<main>
+<h1>Handmade pieces for everyday life</h1>
+<p class="sub">Brass, clay, cotton and cane from small studios across Tamil Nadu.</p>
+<div class="tools" id="cats"></div>
+<div class="tools"><label for="sort">Sort by</label>
+<select id="sort"><option value="">Featured</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option></select></div>
+<div class="grid" id="grid"></div>
+</main>
+<footer>Kolam Home – demo store built for the LearnVistix Web Development Internship.</footer>
+
+<dialog id="detail"><div class="big" id="dPic"></div><h2 id="dName" style="margin:8px 0 0"></h2>
+<div class="cat" id="dCat"></div><p id="dDesc"></p><div class="price" id="dPrice"></div>
+<div style="display:flex;gap:8px;margin-top:14px"><button class="primary" id="dAdd">Add to cart</button><button id="dClose">Close</button></div></dialog>
+
+<dialog id="cart"><h2 style="margin-top:0">Your cart</h2><div id="items"></div>
+<div class="tot"><span>Total</span><span id="total">₹0</span></div>
+<div style="display:flex;gap:8px"><button class="primary" id="checkout">Place order</button><button id="cClose">Keep shopping</button></div></dialog>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script></body></html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CareerBridge – Job Portal</title>
+<link rel="stylesheet" href="style.css"></head><body><div class="wrap">
+<nav><div class="logo">CareerBridge</div><button id="theme">Theme</button></nav>
+<h1>Find your next role</h1>
+<p class="sub">Search openings, read the details and apply in a few minutes. <span id="count"></span></p>
+<div class="filters">
+<input type="search" id="q" placeholder="Search title, company or skill" aria-label="Search jobs">
+<select id="type" aria-label="Job type"><option value="">All types</option><option>Full-time</option><option>Internship</option><option>Part-time</option></select>
+<select id="loc" aria-label="Location"><option value="">All locations</option></select>
+<select id="exp" aria-label="Experience"><option value="">Any experience</option><option value="0">Fresher</option><option value="1">1–3 years</option><option value="3">3+ years</option></select>
+</div>
+<div class="layout"><div id="list"></div><aside class="panel" id="panel" aria-live="polite"></aside></div>
+</div>
+<script src="script.js"></script></body></html>
