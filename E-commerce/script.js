@@ -41,4 +41,4 @@ $("#cartBtn").onclick=()=>{draw();$("#cart").showModal()};$("#cClose").onclick=(
 $("#checkout").onclick=()=>{cart={};save();draw();$("#cart").close();toast("Order placed. Thank you!")};
 $("#q").oninput=list;$("#sort").onchange=list;
 $("#theme").onclick=()=>{const r=document.documentElement,dark=r.dataset.theme?r.dataset.theme=="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=dark?"light":"dark"};
-chips();list();draw();
+chips();list();draw();    
