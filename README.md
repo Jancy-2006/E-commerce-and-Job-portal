@@ -6,7 +6,7 @@ A collection of two full web applications built to practise front-end and back-e
 
 ### 1. E-commerce Website
 An online shopping website where users can browse products, add items to a cart, and place orders.
-
+    
 - **Folder:** [`E-commerce`](./E-commerce)    
 - **Tech:** HTML, CSS, JavaScript *(add React / Node.js / MongoDB etc. if used)*
 
