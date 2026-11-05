@@ -8,7 +8,7 @@ const P=[
 {id:7,n:"Cane storage basket",c:"Storage",p:649,e:"🧺",t:"#efe3bd",d:"Woven cane basket with a lid, good for laundry or toys."},
 {id:8,n:"Palm-leaf organiser",c:"Storage",p:349,e:"📦",t:"#dfe8c8",d:"Lightweight palm-leaf box set in three sizes."}];
 const $=s=>document.querySelector(s);
-let cat="All",cart={};
+let cat="All",cart={} ;
 try{cart=JSON.parse(localStorage.getItem("kh-cart")||"{}")}catch(e){}
 const save=()=>{try{localStorage.setItem("kh-cart",JSON.stringify(cart))}catch(e){}};
 const rs=n=>"₹"+n.toLocaleString("en-IN");
